@@ -208,5 +208,5 @@ Disk_sn=$(echo ${disk_sn} ${seagate_disk_sn} ${intel_disk_sn}|sed 's/,*$//')
 
 #\"RAID_TYPE\":\""$raid"\",
 
-echo "{\"SN\":\""$SN"\",\"HEIGHT\":\""$HEIGHT"\",\"HOSTNAME\":\""$HOSTNAME"\",\"IP\":\""$Ip"\",\"BMC_IP\":\""$bmc_ip"\",\"TYPE_SPEC\":\""$model_type"\",\"SYSTEM\":\""$system"\",\"POWER\":{"$power_sn"},\"CPU\":\""$cpu"\",\"MEM_SN\":{"$mem_sn"},\"DISK\":{"${Disk_sn}"},\"RAID_SPEC\":\""$raid_type"\",\"NET_CART_TYPE\":\""$net"\",\"NET_CART_NUM\":\""$net_cart_num"\",\"BOND_TYPE\":\""$net_mode"\"}" | jq "."
+echo "{\"SN\":\""$SN"\",\"HEIGHT\":\""$HEIGHT"\",\"HOSTNAME\":\""$HOSTNAME"\",\"IP\":\""$Ip"\",\"BMC_IP\":\""$bmc_ip"\",\"TYPE_SPEC\":\""$model_type"\",\"SYSTEM\":\""$system"\",\"POWER\":{"$power_sn"},\"CPU\":\""$cpu"\",\"MEM_SN\":{"$mem_sn"},\"DISK\":{"${Disk_sn}"},\"RAID\":\""$raid"\",\"RAID_SPEC\":\""$raid_type"\",\"NET_CART_TYPE\":\""$net"\",\"NET_CART_NUM\":\""$net_cart_num"\",\"BOND_TYPE\":\""$net_mode"\"}" | jq "."
 
