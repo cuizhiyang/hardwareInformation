@@ -1,7 +1,7 @@
 #!/bin/bash
 #version 3.0
-
 source /etc/profile
+
 #SN
 SN=`sudo /usr/sbin/dmidecode -s system-serial-number | grep -v "#"`
 
